@@ -1,12 +1,12 @@
 body {
-  margin: 5px;
-  padding: 0%;
+  margin: 15px;
+  padding: 5%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: white;
+  background-color: gray;
 }
 
 code {
@@ -19,34 +19,49 @@ div {
   align-content: center;
 
   font-family: Garamond, serif;
-  font-size: 31px;
+  font-size: 25px;
 }
 
 .navbar {
   
   overflow: hidden; 
   list-style-type: none; 
-  padding: 5px; 
+  padding: 0px; 
   margin: 15px; 
+  background-color: #f3f3f3;
+  color: rgb(210, 23, 23);
+  display: flex;
+  flex-direction: row ;
+  gap: 8rem;
+  border-radius: 9px;
+
+
+  
 }
 
 .navbar li {
   float: left; 
-  color: black;
+  color: rgb(255, 255, 255);
+  
 }
 
 .navbar a {
   display: block; 
-  color: black; 
+  color: rgb(0, 0, 0); 
   text-align: center; /* Center-align text */
   padding: 14px 16px; /* Padding around text */
-  text-decoration: none; /* Remove underline from links */
+  text-decoration: none;
+  transition: 0.3s; /* Smooth transition effect when hovered in/out of link */
+
+  
 }
 
 /* Change color on hover */
 .navbar a:hover {
-  background-color: rgb(112, 48, 239); /* Background color on hover */
-  color: black; /* Text color on hover */
+  background-color: rgb(44, 255, 21); 
+  color: black; 
+  border-radius: 20px;
+  border-style:solid;
 }
 button {
   color: #000000;
@@ -59,4 +74,13 @@ button {
 }
 button :active {
   transform: scale(0.96);
+}
+.App{
+  border-style: groove;
+  padding: 5px;
+  border-radius: 10px;
+}
+h5{
+  font-weight: bold;
+  padding: 100px;
 }
